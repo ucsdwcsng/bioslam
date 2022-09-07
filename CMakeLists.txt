@@ -78,6 +78,8 @@ endforeach()
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 # ++++++++++++++++++ find and use all dependent libraries of bioslam +++++++++++++++++++++ #
 set(BIOSLAMLIBS) # variables list for adding libraries to
+list(APPEND CMAKE_PREFIX_PATH "/home/wcsng/Desktop/share/HighFive/CMake/;/usr/local/lib/cmake/imuDataUtils/")
+
 # --- Require Eigen ---
 find_package(Eigen3 REQUIRED)
 message(STATUS "found Eigen at: ${EIGEN3_INCLUDE_DIR}")
